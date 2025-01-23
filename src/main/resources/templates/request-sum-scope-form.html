@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    数字を入力してください
+    <form th:action="@{/request-scope1/input-sum}" method="post">
+    <input type="text" name="num1">
+    <select name="operation">
+<option value="add">+</option>
+<option value="sub">-</option>
+<option value="multi">×</option>
+<option value="div">÷</option>
+<input type="text" name="num2"><br>
+<button>送信</button>
+    </select>
+
+</form>
+</body>
+</html>

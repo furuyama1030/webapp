@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    あなたの情報を入力してください<br>
+    <form action="finished/html"
+    th:action="@{/receive/receive-info}" method="post">
+        名前：<input type="text" name="name"><br>
+        年齢：<input type="text" name="age"><br>
+        <button>送信</button>
+    </form>
+</body>
+</html>
