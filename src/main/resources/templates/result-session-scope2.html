@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h5>page2</h5>
+    入力された名前は「<span th:text="${session.name}">鈴木一郎</span>」です。
+    <br>
+    <a href="result-session-scope3.html" th:href="@{/session-scope/to-page3}">
+        to page3</a>
+</body>
+
+</html>
